@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>E-Commerce Image Mapping</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background: white;
+    padding: 30px 40px 40px;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    text-align: center;
+    max-width: 1000px;
+    width: 95%;
+}
+
+h1{
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.student-info{
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #444;
+}
+
+p{
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.image-box{
+    position: relative;
+    display: inline-block;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 3px solid #ecf0f1;
+    transition: 0.3s;
+}
+
+.image-box:hover{
+    transform: scale(1.01);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.footer{
+    margin-top: 25px;
+    font-size: 14px;
+    color: #777;
+}
+
+.brand-row{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.brand-card{
+    background: #f7f9fb;
+    padding: 12px 18px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    font-size: 14px;
+    font-weight: 500;
+    color: #2c3e50;
+    transition: 0.3s;
+}
+
+.brand-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>E-Commerce Image Mapping</h1>
+
+    <div class="student-info">
+        <strong>Name:</strong> N. S. Sharmisri <br>
+        <strong>Reg No:</strong> 913123205094
+    </div>
+
+    <p>Click on any brand logo to visit the official website</p>
+
+    <div class="image-box">
+
+        <!-- Main Image -->
+        <img src="online-shopping-app-905x400.jpg" 
+             alt="E-commerce Sites" 
+             usemap="#ecomap" 
+             width="900">
+
+        <!-- Image Map -->
+        <map name="ecomap">
+
+            <!-- Flipkart -->
+            <area shape="rect" coords="0,0,300,200"
+                  href="https://www.flipkart.com"
+                  target="_blank"
+                  alt="Flipkart">
+
+            <!-- Nykaa -->
+            <area shape="rect" coords="300,0,600,200"
+                  href="https://www.nykaa.com"
+                  target="_blank"
+                  alt="Nykaa">
+
+            <!-- Myntra -->
+            <area shape="rect" coords="0,200,300,450"
+                  href="https://www.myntra.com"
+                  target="_blank"
+                  alt="Myntra">
+
+            <!-- Amazon -->
+            <area shape="rect" coords="300,200,600,450"
+                  href="https://www.amazon.in"
+                  target="_blank"
+                  alt="Amazon">
+
+            <!-- Meesho -->
+            <area shape="rect" coords="600,200,900,450"
+                  href="https://www.meesho.com"
+                  target="_blank"
+                  alt="Meesho">
+
+        </map>
+
+    </div>
+
+    <div class="brand-row">
+        <div class="brand-card">Flipkart</div>
+        <div class="brand-card">Nykaa</div>
+        <div class="brand-card">Myntra</div>
+        <div class="brand-card">Amazon</div>
+        <div class="brand-card">Meesho</div>
+    </div>
+
+</div>
+
+</body>
+</html>
